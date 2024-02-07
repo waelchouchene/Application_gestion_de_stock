@@ -1,0 +1,93 @@
+{% load static %}
+<ul class="sidebar-menu" id="nav-accordion">
+
+
+     <li class="mt">
+       <p>
+            <p align="center" ><img src="{% static 'genericfolder/img/logobani.png' %}" class="img-circle" width="100" height="100"></p>
+            <span></span>
+       </p>
+         <h5 class="centered">Youssef Bani</h5>
+    </li>
+
+    <li class="mt">
+        <a class="{{ articlesMenu }}" href="{% url 'gestionarticles:articles' %}" >
+            <i class="fa fa-building-o"></i>
+         <b>   <span style="color:white;font-size:13px;text-decoration: underline;">Gestion des articles</span></b>
+        </a>
+    </li>
+       <li class="mt">
+       <p>
+            <i ><br><br></i>
+            <span></span>
+       </p>
+    </li>
+    <li class="mt">
+        <a class="{ clientsMenu}}" href="{% url 'gestionclients:clients' %}">
+
+            <i class="fa fa-user"></i>
+          <b>  <span style="color:white;font-size:13px;text-decoration: underline;">Gestion des clients</span></b>
+        </a>
+    </li>
+       <li class="mt">
+       <p>
+            <i ><br><br></i>
+            <span></span>
+       </p>
+    </li>
+    <li class="mt">
+        <a class="{{personnelsMenu}}" href="{% url 'gestionpersonnels:personnels' %}">
+            <i class="fa fa-users"></i>
+         <b>   <span style="color:white;font-size:13px;text-decoration: underline;">Gestion des personnels</span></b>
+        </a>
+    </li>
+        <li class="mt">
+       <p>
+            <i ><br><br></i>
+            <span></span>
+       </p>
+    </li>
+
+    <li class="mt">
+        <a class="{{fournisseursMenu }}" href="{% url 'gestionfournisseurs:fournisseurs' %}">
+            <i class="fa fa-users"></i>
+         <b>   <span style="color:white;font-size:13px;text-decoration: underline;">Gestion des fournisseurs </span></b>
+        </a>
+    </li>
+       <li class="mt">
+       <p>
+            <i ><br><br></i>
+            <span></span>
+       </p>
+    </li>
+    <li class="mt">
+         <a class="{{ commandesMenu }}" href="{% url 'gestioncommandes:commandes' %}"  >
+             <i class="fa fa-file-text-o"></i>
+        <b>     <span style="color:white;font-size:13px;text-decoration: underline;">Gestion des commandes </span></b>
+         </a>
+    </li>
+     <li class="mt">
+       <p>
+            <i ><br><br></i>
+            <span></span>
+       </p>
+    </li>
+    <li class="mt">
+         <a class="{{ livraisonsMenu }}" href="{% url 'gestionlivraisons:livraisons' %}"  >
+             <i class="fa fa-file-text-o"></i>
+        <b>     <span style="color:white;font-size:13px;text-decoration: underline;">Gestion des livraisons </span></b>
+         </a>
+    </li>
+    <li class="mt">
+       <p>
+            <i ><br><br></i>
+            <span></span>
+       </p>
+    </li>
+    <li class="mt">
+         <a class="{{ vehiculesMenu }}" href="{% url 'gestionvehicules:vehicules' %}"  >
+             <i class="fa fa-file-text-o"></i>
+        <b>     <span style="color:white;font-size:13px;text-decoration: underline;">Gestion des véhicules </span></b>
+         </a>
+    </li>
+</ul>

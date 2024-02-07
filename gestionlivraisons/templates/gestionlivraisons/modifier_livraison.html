@@ -1,0 +1,12 @@
+{% extends 'gestionlivraisons/livraisons_base.html' %}
+{% load static %}
+
+{% block subtitle %} Modifier la livraison {{livraison.id }}  {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionlivraisons:save_livraison' livraison.id %}
+{% endblock %}
+
+{% block action_name %}
+    Sauvegarder
+{% endblock %}

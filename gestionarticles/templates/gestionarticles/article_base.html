@@ -1,0 +1,149 @@
+{% extends 'genericfolder/base.html' %}
+{% load static %}
+
+{% block title %} Gestion des articles {% endblock %}
+
+{% block contenu %}
+<div class="row mt">
+  {% if articlelist %}
+    <div class="content-panel">
+      <div class="adv-table">
+        <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+          <thead>
+            <tr>
+              <th> #</th>
+              <th> Désignation</th>
+              <th> Quantité en stock</th>
+              <th> Prix unitaire</th>
+              <th> Catégorie</th>
+              <th> TVA %</th>
+              <th> Fournisseur </th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for a in articlelist %}
+              <tr>
+                <td> {{ forloop.counter }}</td>
+                <td> {{ a.designation}}</td>
+                <td> {{ a.quantite_stock }}</td>
+                <td> {{ a.prix_unitaire }}</td>
+                <td> {{ a.categorie }} </td>
+                <td> {{ a.tva }}</td>
+                <td> {{ a.fournisseur }}</td>
+
+                <td>
+                    <button  onclick="if(confirm('êtes-vous sûr de vouloir modifier cet article '+'{{a.nom}} {{a.designation}}'+' ?')){location.href='{% url 'gestionarticles:modifier_article' a.id %}'};"
+                            class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i>
+                    </button>
+                    <button onclick="if(confirm('êtes-vous sûr de vouloir supprimer cet article '+'{{a.nom}} {{a.designation}}'+' ?')){location.href='{% url 'gestionarticles:delete_article' a.id %}'};"
+                            class="btn btn-danger btn-xs">
+                        <i class="fa fa-trash-o "></i>
+                    </button>
+                     <button onclick="location.href='{% url 'gestionarticles:affiche_commande_article' a.id %}';"
+                            class="btn btn-theme02 btn-xs">
+                            <i class="fa fa-list-alt "> Commandes</i>
+                     </button>
+
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="col-lg-12">
+    <h4><i class="fa fa-angle-right"></i> {% block subtitle %}{% endblock %}</h4>
+    <div class="form-panel">
+      {% if error_message %}
+          <div style="color: red;" data-form-alert="" class="danger">
+            {{error_message}}
+          </div>
+          <br>
+      {% endif %}
+
+      <form class="mbr-form" action="{% block form_action %}{% endblock %}" method="post"
+            enctype="multipart/form-data" data-form-title="mobirise form"><input type="hidden" data-form-email="true">
+        {% csrf_token %}
+        <div class="row row-sm-offset">
+            <div class="col-md-4 multi-horizontal" data-for="id_agence">
+                <div class="form-group">
+                    <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Désignation</label>
+                    <input value="{{article.designation}}" type="text" class="form-control"
+                           name="designation" data-form-field="name"
+                           required id="designation">
+                </div>
+            </div>
+            <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                <div class="form-group">
+                    <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Quantité
+                        en Stock</label>
+                    <input value="{{article.quantite_stock}}" type="number" class="form-control"
+                           name="quantitestock" data-form-field="name"
+                           required="" id="quantitestock">
+                </div>
+            </div>
+        </div>
+        <div class="row row-sm-offset">
+            <div class="col-md-4 multi-horizontal" data-for="nom">
+                <div class="form-group">
+                    <label class="form-control-label mbr-fonts-style display-7"
+                           for="name-form1-2w">Prix unitaire </label>
+                    <input value="{{article.prix_unitaire}}" type="text" class="form-control"
+                           name="prixunitaire" data-form-field="name"
+                           required="" id="prixunitaire">
+                </div>
+            </div>
+            <div class="col-md-4 multi-horizontal" data-for="prenom">
+                <div class="form-group">
+                    <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Catégorie</label>
+                    <select class="form-control" name="categorie">
+                    <option selected="selected"> </option>
+
+                        {% for categorie in categorielist %}
+                         <option {% if categorie == article.categorie %}selected="selected" {% endif %}
+                                value="{{ categorie.id  }}">{{ categorie.libelle}}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row row-sm-offset">
+          <div class="col-md-4 multi-horizontal" data-for="nom">
+            <div class="form-group">
+              <label class="form-control-label mbr-fonts-style display-7"
+                    for="name-form1-2w">Fournisseur </label>
+              <select class="form-control" name="fournisseur">
+                <option selected="selected"></option>
+                {% for fournisseur in fournisseurlist %}
+                  <option {% if fournisseur == article.fournisseur %}selected="selected" {% endif %}
+                         value="{{ fournisseur.id }}">{{ fournisseur.nom}}  {{ fournisseur.prenom}}
+                  </option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 multi-horizontal" data-for="nom">
+              <div class="form-group">
+                  <label class="form-control-label mbr-fonts-style display-7"
+                         for="name-form1-2w">T.V.A % </label>
+                  <input value='{% widthratio article.tva 1 100 %}'  type="text" class="form-control"
+                         name="tva" data-form-field="tva"
+                         required="" id="tva">
+              </div>
+          </div>
+        </div>
+        <p align="left">
+            <button type="submit" class="btn btn-primary btn-lg">{% block action_name %}{% endblock %}</button>
+            <button type="reset" class="btn btn-default btn-lg">Annuler</button>
+        </p>
+      </form>
+    </div>
+    <!-- /form-panel -->
+  </div>
+</div>
+
+{% endblock %}

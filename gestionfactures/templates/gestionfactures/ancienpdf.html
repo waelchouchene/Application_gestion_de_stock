@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 5px;
+            background-color: #fff;
+            font-size: 13px;
+        }
+
+        .table th,
+        .table td {
+            padding: 5px;
+            vertical-align: top;
+            border-top: 1px solid #000;
+            border :1px solid #000;
+            text-align: center;
+            color:blue;
+        }
+
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #000;
+        }
+
+        .table tbody + tbody {
+            border-top: 2px solid #000;
+        }
+
+        .table .table {
+            background-color: #fff;
+        }
+
+        .card-header{
+            font-size: 2em;
+        }
+
+        span.list-group {
+            height: 20px;
+            line-height: 20px;
+            list-style: none;
+            font-size: 1.5em;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        a.logo {
+            font-size: 24px;
+            color: #c7c7c7;
+            float: left;
+            margin-top: 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        a.logo span {
+            color: #4ECDC4;
+        }
+        a.date {
+            font-size: 13px;
+            color: #c7c7c7;
+            float: right;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        table.header-table {
+            border: none;
+        }
+    .heading { color: #FF0000; }
+
+    </style>
+</head>
+<body>
+
+<table style="text-align: right;" class="header-table" cellspacing="0" cellpadding="0">
+    <tbody>
+    <tr>
+        <td><a class="logo">
+            <table style="text-align: left;" class="header-table" cellspacing="0" cellpadding="0">
+                <tbody>
+                <tr>
+                    <td><a class="logo"><b>GESTION&nbsp;<span>STOCK</span></b></a></td>
+                </tr>
+                </tbody>
+            </table>
+        <td><a class="date"><b>{{dateNow}}</b></a></td>
+    </tr>
+    </tbody>
+</table>
+<br></br>
+<br></br>
+<br></br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="heading">{{ commande.libelle }}</h2>
+        </div>
+
+        <br><br>
+
+        <table class="header-table" cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr>
+                <td><span class="list-group"><span class="bold">Date commande:</span> {{ commande.date }}</span></td>
+                <td><span class="list-group"><span class="bold">Personnel:</span> {% if commande.personnel %}{{commande.personnel}}{% else %}Superuser{% endif %}</span>
+                </td>
+                <td><span class="list-group"><span class="bold">Client:</span> {{ commande.client }}</span></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td><span class="list-group"><span class="bold">Adresse:</span> {{ commande.client.adresse }}</span>
+                </td>
+                <td><span class="list-group"><span class="bold">Téléphone:</span> {{ commande.client.telephone }}</span>
+                </td>
+                <td><span class="list-group"><span class="bold">Email:</span> {{ commande.client.email }}</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <br></br>
+
+        <table class="header-table" cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr>
+                <td class="heading"><span class="list-group"><span class="bold">Prix HT:</span> {{ commande.total_prix_ht }}</span>
+                </td>
+                <td class="heading"><span class="list-group"><span class="bold">Prix TTC:</span> {{ commande.total_prix_ttc }}</span>
+                </td>
+                <td><span class="list-group"></span></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <br><br>
+        <br><br>
+
+        <span class="list-group"><span class="bold">Détails de la commande</span></span>
+        <br><br>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Article</th>
+                <th>Quantité</th>
+                <th>Prix HT</th>
+                <th>Prix TTC</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for dc in commande.detailscommande_set.all %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{dc.article.designation}}</td>
+                <td>{{dc.qtecommande}}</td>
+                <td>{{dc.prix_ht}}</td>
+                <td>{{dc.prix_ttc}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

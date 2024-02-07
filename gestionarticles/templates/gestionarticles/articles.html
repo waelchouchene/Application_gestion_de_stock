@@ -1,0 +1,12 @@
+{% extends 'gestionarticles/article_base.html' %}
+{% load static %}
+
+{% block subtitle %} Ajouter un article {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionarticles:ajouter_article' %}
+{% endblock %}
+
+{% block action_name %}
+    Ajouter
+{% endblock %}

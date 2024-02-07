@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+<style type="text/css">
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 5px;
+            background-color: #fff;
+            font-size: 13px;
+        }
+
+        .table th,
+        .table td {
+            padding: 5px;
+            vertical-align: top;
+            border-top: 1px solid #000;
+            text-align: center;
+        }
+
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #000;
+        }
+
+        .table tbody + tbody {
+            border-top: 2px solid #000;
+        }
+
+        .table .table {
+            background-color: #fff;
+        }
+
+        .card-header{
+            font-size: 2em;
+        }
+
+        span.list-group {
+            height: 20px;
+            line-height: 20px;
+            list-style: none;
+            font-size: 1.5em;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        a.logo {
+            font-size: 24px;
+            color: #c7c7c7;
+            float: left;
+            margin-top: 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        a.logo span {
+            color: #4ECDC4;
+        }
+        a.date {
+            font-size: 13px;
+            color: #c7c7c7;
+            float: right;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        table.header-table {
+            border: none;
+        }
+    .heading { color: #FF0000; }
+
+    </style>
+</head>
+<body>
+
+<table style="text-align: right;" class="header-table" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td><a class="logo">
+        <table style="text-align: left;" class="header-table" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td><a class="logo"><b>GESTION&nbsp;<span>STOCK</span></b></a></td>
+            </tr>
+          </tbody>
+        </table>
+      <td><a class="date"><b>{{dateNow}}</b></a></td>
+    </tr>
+  </tbody>
+</table>
+<br></br>
+<br></br>
+<br></br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>{{ commande.libelle }}</h2>
+        </div>
+<div class="row row-sm-offset">
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold" for="phone-form1-2w">
+                                Date commande
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12" for="phone-form1-2w">
+                                {{commande.date}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Personnel
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {% if commande.personnel %}{{commande.personnel}}{% else %}Superuser{% endif %}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Client
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.client}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row row-sm-offset">
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold" for="phone-form1-2w">
+                                Adresse
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12" for="phone-form1-2w">
+                                {{commande.client.adresse}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Téléphone
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.client.telephone}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Email
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.client.email}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row row-sm-offset">
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Prix HT
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.total_prix_ht}}
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Prix TTC
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.total_prix_ttc}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-sm-offset">
+                    <div class="col-md-12 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                <h3>Détails de la commande</h3>
+                            </label>
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Article</th>
+                            <th>Quantité</th>
+                            <th>Prix HT</th>
+                            <th>Prix TTC</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for dc in commande.detailscommande_set.all %}
+                          <tr>
+                            <td>{{forloop.counter}}</td>
+                            <td>{{dc.article.designation}}</td>
+                            <td>{{dc.qtecommande}}</td>
+                            <td>{{dc.prix_ht}}</td>
+                            <td>{{dc.prix_ttc}}</td>
+                          </tr>
+                        {% endfor %}
+                        </tbody>
+                      </table>
+                </div>
+
+
+
+
+    </div>
+</div>
+
+</body>
+</html>

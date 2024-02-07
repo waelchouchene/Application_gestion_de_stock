@@ -1,0 +1,12 @@
+{% extends 'gestionfournisseurs/fournisseurs_base.html' %}
+{% load static %}
+
+{% block subtitle %} Ajouter un fournisseur {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionfournisseurs:ajouter_fournisseur' %}
+{% endblock %}
+
+{% block action_name %}
+    Ajouter
+{% endblock %}

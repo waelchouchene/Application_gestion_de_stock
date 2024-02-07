@@ -1,0 +1,12 @@
+{% extends 'gestionfournisseurs/fournisseurs_base.html' %}
+{% load static %}
+
+{% block subtitle %} Modifier le fournisseur {{fournisseur.prenom }} {{ fournisseur.nom }} {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionfournisseurs:save_fournisseur' fournisseur.id %}
+{% endblock %}
+
+{% block action_name %}
+    Sauvegarder
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'gestionpersonnels/personnels_base.html' %}
+{% load static %}
+
+{% block subtitle %} Ajouter un personnel {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionpersonnels:ajouter_personnel' %}
+{% endblock %}
+
+{% block action_name %}
+    Ajouter
+{% endblock %}

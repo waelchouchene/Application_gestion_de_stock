@@ -1,0 +1,12 @@
+{% extends 'gestioncommandes/commande_base.html' %}
+{% load static %}
+
+{% block subtitle %} Ajouter une commande {% endblock %}
+
+{% block form_action %}
+    {% url 'gestioncommandes:ajouter_commande' %}
+{% endblock %}
+
+{% block action_name %}
+    Ajouter
+{% endblock %}

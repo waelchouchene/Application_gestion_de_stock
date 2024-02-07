@@ -1,0 +1,12 @@
+{% extends 'gestionclients/clients_base.html' %}
+{% load static %}
+
+{% block subtitle %} Ajouter un client {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionclients:ajouter_client' %}
+{% endblock %}
+
+{% block action_name %}
+    Ajouter
+{% endblock %}

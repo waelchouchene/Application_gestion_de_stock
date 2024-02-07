@@ -1,0 +1,158 @@
+{% extends 'genericfolder/base.html' %}
+{% load static %}
+
+{% block title %} Gestion des personnels {% endblock %}
+
+{% block contenu %}
+<div class="row mt">
+  {% if personnellist %}
+    <div class="content-panel">
+      <div class="adv-table">
+        <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+          <thead>
+            <tr>
+                <th> #</th>
+                <th> Nom</th>
+                <th> Prénom</th>
+                 <th> Email</th>
+                <th> Service</th>
+                <th> Admin?</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for p in personnellist %}
+            <tr>
+                <td> {{ forloop.counter }}</td>
+                <td> {{ p.nom}}</td>
+                <td> {{ p.prenom}}</td>
+                 <td> {{ p.email }}</td>
+                <td> {{ p.service.intitule }}</td>
+                <td> {{ p.is_admin }}</td>
+
+
+                <td>
+                    <button onclick="if(confirm('êtes-vous sûr de vouloir modifier le personnel '+'{{p.nom}} {{p.prenom}}'+' ?')){location.href='{% url 'gestionpersonnels:modifier_personnel' p.id %}'};"
+                            class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i>
+                    </button>
+                    <button onclick="if(confirm('êtes-vous sûr de vouloir supprimer le personnel '+'{{p.nom}} {{p.prenom}}'+' ?')){location.href='{% url 'gestionpersonnels:delete_personnel' p.id %}'};"
+                            class="btn btn-danger btn-xs">
+                        <i class="fa fa-trash-o "></i>
+                    </button>
+                    <button onclick="location.href='{% url 'gestionpersonnels:change_password' p.id %}';"
+                            class="btn btn-warning btn-xs"><i class="fa fa-lock"></i>
+                    </button>
+                      <button onclick="location.href='{% url 'gestionpersonnels:affiche_commande_personnel' p.id %}';"
+                            class="btn btn-theme02 btn-xs">
+                     <i class="fa fa-list-alt "> Commandes</i>
+                      </button>
+                </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="col-lg-12">
+    <h4><i class="fa fa-angle-right"></i> {% block subtitle %}{% endblock %}</h4>
+    <div class="form-panel">
+      {% if error_message %}
+      <div style="color: red;" data-form-alert="" class="danger">
+        {{error_message}}
+      </div>
+      <br>
+      {% endif %}
+
+        <form class="mbr-form" action="{% block form_action %}{% endblock %}" method="post"
+              enctype="multipart/form-data"
+              data-form-title="mobirise form"><input type="hidden" data-form-email="true">
+            {% csrf_token %}
+
+            <div class="row row-sm-offset">
+                <div class="col-md-4 multi-horizontal" data-for="id_agence">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7"
+                               for="phone-form1-2w">Nom</label>
+                        <input value="{{personnel.nom}}" type="text" class="form-control"
+                               name="nom" data-form-field="name"
+                               required="" id="nom">
+                    </div>
+                </div>
+                <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Prénom</label>
+                        <input value="{{personnel.prenom}}" type="text" class="form-control"
+                               name="prenom" data-form-field="name"
+                               required="" id="prenom">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-sm-offset">
+                <div class="col-md-4 multi-horizontal" data-for="id_agence">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7"
+                               for="phone-form1-2w">Email</label>
+                        <input value="{{personnel.email}}" type="text" class="form-control"
+                               name="email" data-form-field="name"
+                               required="" id="email">
+                    </div>
+                </div>
+                <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Service</label>
+                        <select class="form-control" name="service">
+                            <option selected="selected"> </option>
+
+                            {% for service in servicelist %}
+                                <option {% if service == personnel.service %}selected="selected" {% endif %}
+                                        value="{{ service.id }}">{{ service.intitule}}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-sm-offset">
+                <div class="col-md-4 multi-horizontal" data-for="email">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="email-form1-2w">Pseudo</label>
+                        <input value="{{personnel.user.username}}" type="tel" class="form-control"
+                               name="pseudo" data-form-field="tel"
+                               required id="pseudo">
+                    </div>
+                </div>
+                {% if not personnel %}
+                    <div class="col-md-4 multi-horizontal" data-for="phone">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Mot
+                                de passe</label>
+                            <input value="{{personnel.motdepasse}}" type="password" class="form-control"
+                                   name="password" data-form-field="phone"
+                                   required id="motdepasse">
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input {% if personnel.is_admin %}checked{% endif %} name="isadmin" type="checkbox" value="checked">
+                        Admin?
+                </label>
+            </div>
+
+            <p align="left">
+                <button type="submit" class="btn btn-primary btn-lg">{% block action_name %}{% endblock %}</button>
+                <button type="reset" class="btn btn-default btn-lg">Annuler</button>
+            </p>
+        </form>
+    </div>
+    <!-- /form-panel -->
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'gestionclients/clients_base.html' %}
+{% load static %}
+
+{% block subtitle %} Modifier le client {{client.prenom }} {{ client.nom }} {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionclients:save_client' client.id %}
+{% endblock %}
+
+{% block action_name %}
+    Sauvegarder
+{% endblock %}

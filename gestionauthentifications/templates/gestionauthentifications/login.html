@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Site officiel de gestion de stocks</title>
+
+  <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'genericfolder/lib/bootstrap/css/bootstrap.min.css' %}">
+  <!--external css-->
+    <link rel="stylesheet" type="text/css" href="{% static 'genericfolder/lib/font-awesome/css/font-awesome.css' %}">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'genericfolder/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'genericfolder/css/style-responsive.css' %}" rel="stylesheet">
+  
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+  <div id="login-page">
+    <div class="container">
+      <form class="form-login" action="{% url 'gestionauthentifications:login'%}" method="post">
+        {% csrf_token %}
+        <h2 class="form-login-heading">Connexion</h2>
+        <div class="login-wrap">
+          <input type="text" name="username" class="form-control" placeholder="Nom d'utilisateur" autofocus>
+          <br>
+          <input type="password" name="password" class="form-control" placeholder="Mot de passe">
+          <button class="btn btn-theme btn-block" href="index.html" type="submit" style="margin-top:5%;"><i class="fa fa-lock"></i> Se connecter</button>
+          <hr>
+          <div class="login-social-link centered">
+            <img src="{% static 'genericfolder/img/logobani.png' %}" width="200" height="200">
+          </div>
+          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
+               class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Mot de passe oublié ?</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Enter your e-mail address below to reset your password.</p>
+                  <input type="text" name="email" placeholder="Email" autocomplete="off"
+                         class="form-control placeholder-no-fix">
+                </div>
+                <div class="modal-footer">
+                  <button data-dismiss="modal" class="btn btn-default" type="button">Annuler</button>
+                  <button class="btn btn-theme" type="button">Envoyer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="registration">
+            Vous n'avez pas de compte ?<br/>
+            <a class="" href="#">
+              Créer un compte
+              </a>
+          </div>
+        </div>
+        <!-- Modal -->
+
+        <!-- modal -->
+      </form>
+    </div>
+  </div>
+  <!-- js placed at the end of the document so the pages load faster -->
+
+  <script  src="{% static 'genericfolder/lib/jquery/jquery.min.js' %}"> </script>
+
+  <script src="{% static 'genericfolder/lib/bootstrap/js/bootstrap.min.js'%}"></script>
+  <!--BACKSTRETCH-->
+  <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+<!--  <script type="text/javascript" src="{% static 'genericfolder/lib/jquery.backstretch.min.js' %}"></script>-->
+<!--  <script>-->
+<!--    $.backstretch("{% static 'genericfolder/img/stockbg.jpg' %}", {-->
+<!--      speed: 500-->
+<!--    });-->
+<!--  </script>-->
+</body>
+
+</html>

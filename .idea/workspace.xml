@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/gestioncommandes/views.py" line="35" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c01ec968-96fb-47cb-a912-32f67cf50f6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gestiondestock.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/css/style-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/css/table-responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/css/to-do.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/css/zabuto_calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/img/gestionstock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/img/logobani.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/css/DT_bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/css/demo_page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/css/demo_table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/css/demo_table_jui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/css/jquery.dataTables_themeroller.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/Sorting icons.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/back_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/back_enabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/back_enabled_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/details_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/details_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/forward_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/forward_enabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/forward_enabled_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/js/DT_bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-datatable/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/advanced-form-components.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-datepicker/css/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-datepicker/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-daterangepicker/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-daterangepicker/daterangepicker-bs3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-daterangepicker/daterangepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-daterangepicker/daterangepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-daterangepicker/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-datetimepicker/css/datetimepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-fileupload/bootstrap-fileupload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-fileupload/bootstrap-fileupload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-inputmask/bootstrap-inputmask.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-timepicker/compiled/timepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-timepicker/js/bootstrap-timepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-wysihtml5/bootstrap-wysihtml5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap-wysihtml5/wysihtml5-0.3.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/calendar-conf-events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/chart-master/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/chartjs-conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/common-scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/custom-js/datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/dropzone/css/dropzone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/dropzone/dropzone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/dropzone/images/spritemap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/dropzone/images/spritemap@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/easy-pie-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/fancybox/jquery.fancybox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/fancybox/jquery.fancybox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/css/jquery.fileupload-noscript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/css/jquery.fileupload-ui-noscript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/css/jquery.fileupload-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/css/jquery.fileupload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/img/progressbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/cors/jquery.xdr-transport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/jquery.fileupload-audio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/jquery.fileupload-image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/jquery.fileupload-process.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/jquery.fileupload-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/jquery.fileupload-validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/jquery.fileupload-video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/jquery.fileupload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/jquery.iframe-transport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/file-uploader/js/vendor/jquery.ui.widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/flot/jquery.flot.crosshair.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/flot/jquery.flot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/flot/jquery.flot.pie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/flot/jquery.flot.resize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/flot/jquery.flot.stack.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/flotchart-conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/form-component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/form-validation-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/fullcalendar/bootstrap-fullcalendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/fullcalendar/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/google-maps/data/points.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/google-maps/maplace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/gritter-conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/gritter/css/jquery.gritter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/gritter/css/jquery.gritter0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/gritter/images/gritter-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/gritter/images/gritter-long.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/gritter/images/gritter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/gritter/images/ie-spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/gritter/js/jquery.gritter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery-easy-pie-chart/jquery.easy-pie-chart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery-easy-pie-chart/jquery.easy-pie-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery-ui-1.9.2.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery.backstretch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery.dcjqaccordion.2.7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery.nicescroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery.scrollTo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery.sparkline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery.tagsinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery.ui.touch-punch.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/morris-conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/morris/morris.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/multiselect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/php-mail-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/raphael/raphael.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/sparkline-chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/tasks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/xchart/d3.v3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/xchart/xcharts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/xchart/xcharts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/static/genericfolder/lib/zabuto_calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/templates/genericfolder/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/templates/genericfolder/imported_css.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/templates/genericfolder/imported_js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/templates/genericfolder/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genericfolder/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/migrations/0002_remove_article_ttc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/templates/gestionarticles/article_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/templates/gestionarticles/articles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/templates/gestionarticles/modifier_article.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionarticles/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/templates/gestionauthentifications/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionauthentifications/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/templates/gestionclients/clients.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/templates/gestionclients/clients_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/templates/gestionclients/modifier_client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionclients/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/migrations/0002_auto_20200909_1850.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/migrations/0003_auto_20200913_2223.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/services/commandeService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/static/gestioncommandes/js/commandeScripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/ajouter_commande.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commandes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/edit_commande_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/modifier_commande.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestioncommandes/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/templates/gestionfactures/ancienpdf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/templates/gestionfactures/pdf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/templates/gestionfactures/pdf2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfactures/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/templates/gestionfournisseurs/fournisseurs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/templates/gestionfournisseurs/fournisseurs_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/templates/gestionfournisseurs/modifier_fournisseur.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionfournisseurs/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/templates/gestionlivraisons/livraisons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/templates/gestionlivraisons/livraisons_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/templates/gestionlivraisons/modifier_livraison.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionlivraisons/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/migrations/0002_auto_20200905_2030.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/migrations/0003_auto_20200905_2048.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/modifier_personnel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/personnels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/personnels_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionpersonnels/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionstocks/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionstocks/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionstocks/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionstocks/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/templates/gestionvehicules/modifier_vehicule.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/templates/gestionvehicules/vehicules.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/templates/gestionvehicules/vehicules_base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gestionvehicules/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirement.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestioncommandes/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/ajouter_commande.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestionfactures/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" column="96" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="96" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestionfactures/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/edit_commande_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;/form&gt;</find>
+      <find>service</find>
+      <find>Stock</find>
+      <find>user_id</find>
+      <find>css</find>
+      <find>se c</find>
+      <find>.css</find>
+      <find>stock</find>
+      <find>gestion_contrat</find>
+      <find>ajax</find>
+      <find>article</find>
+      <find>if commande.</find>
+      <find>Ajouter un fournisseur</find>
+      <find>select</find>
+      <find>undo</find>
+      <find>gestion</find>
+      <find>subtitle</find>
+      <find>bill</find>
+      <find>personnel</find>
+      <find>idarticle</find>
+      <find>idservice</find>
+      <find>libelle</find>
+      <find>admin</find>
+      <find>menu</find>
+      <find>impo</find>
+      <find>form</find>
+      <find>action</find>
+      <find>Enter your e-mail address below to reset your password.</find>
+      <find>calculate_ht_ttc</find>
+      <find>updateCommadeHtTtc</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Nader\wael-project\projetstock\gestiondestock\gestionarticles</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/gestionauthentification/templates/gestion_authentification/login.html" />
+        <option value="$PROJECT_DIR$/gestionauthentification/urls.py" />
+        <option value="$PROJECT_DIR$/gestionauthentification/apps.py" />
+        <option value="$PROJECT_DIR$/gestionauthentification/views.py" />
+        <option value="$PROJECT_DIR$/gestionauthentifications/templates/gestion_authentification/login.html" />
+        <option value="$PROJECT_DIR$/gestionstocks/settings.py" />
+        <option value="$PROJECT_DIR$/gestionauthentifications/views.py" />
+        <option value="$PROJECT_DIR$/gestionpersonnels/urls.py" />
+        <option value="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/modifier_role.html" />
+        <option value="$PROJECT_DIR$/gestionpersonnels/models.py" />
+        <option value="$PROJECT_DIR$/genericfolder/models.py" />
+        <option value="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/personnels.html" />
+        <option value="$PROJECT_DIR$/genericfolder/apps.py" />
+        <option value="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/roles_base.html" />
+        <option value="$PROJECT_DIR$/gestionfactures/views.py" />
+        <option value="$PROJECT_DIR$/gestionfactures/urls.py" />
+        <option value="$PROJECT_DIR$/genericfolder/templates/genericfolder/base.html" />
+        <option value="$PROJECT_DIR$/gestionstockages/templates/gestionstockages/stockages.html" />
+        <option value="$PROJECT_DIR$/gestionstockages/templates/gestionstockages/modifier_stockage.html" />
+        <option value="$PROJECT_DIR$/gestionstockages/urls.py" />
+        <option value="$PROJECT_DIR$/gestionstockages/templates/gestionstockages/modifier_stock.html" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/article_list_options.html" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/testcommande.html" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commandes.html" />
+        <option value="$PROJECT_DIR$/gestionstockages/templates/gestionstockages/stockages_base.html" />
+        <option value="$PROJECT_DIR$/gestionstocks/utils.py" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/test2.html" />
+        <option value="$PROJECT_DIR$/gestionclients/templates/gestionclients/clients_base.html" />
+        <option value="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/personnels_base.html" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/test.html" />
+        <option value="$PROJECT_DIR$/gestionstocks/models.py" />
+        <option value="$PROJECT_DIR$/gestionarticles/models.py" />
+        <option value="$PROJECT_DIR$/gestionstockages/views.py" />
+        <option value="$PROJECT_DIR$/gestioncommandes/models.py" />
+        <option value="$PROJECT_DIR$/gestioncommandes/urls.py" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/modifier_commande.html" />
+        <option value="$PROJECT_DIR$/gestionarticles/templates/gestionarticles/article_base.html" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html" />
+        <option value="$PROJECT_DIR$/gestionarticles/views.py" />
+        <option value="$PROJECT_DIR$/gestionclients/views.py" />
+        <option value="$PROJECT_DIR$/gestioncommandes/views.py" />
+        <option value="$PROJECT_DIR$/gestionpersonnels/views.py" />
+        <option value="$PROJECT_DIR$/gestionfournisseurs/views.py" />
+        <option value="$PROJECT_DIR$/gestionarticles/urls.py" />
+        <option value="$PROJECT_DIR$/gestionstocks/urls.py" />
+        <option value="$PROJECT_DIR$/gestionauthentifications/urls.py" />
+        <option value="$PROJECT_DIR$/requirement.txt" />
+        <option value="$PROJECT_DIR$/gestionauthentifications/templates/gestionauthentifications/login.html" />
+        <option value="$PROJECT_DIR$/genericfolder/templates/genericfolder/menu.html" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/edit_commande_base.html" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="320" />
+    <option name="y" value="29" />
+    <option name="width" value="1598" />
+    <option name="height" value="1092" />
+  </component>
+  <component name="ProjectId" id="1gMS57ZMGGqVm5Kdv0jrHBeDZh9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Course" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nader\wael-project\gestiondestock\gestionauthentifications" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nader\wael-project\gestiondestock\gestionpersonnels\templates\gestionpersonnels" />
+      <recent name="C:\Users\Chouchene\PycharmProjects\gestiondestock\gestionstock" />
+      <recent name="C:\Users\Chouchene\PycharmProjects\gestiondestock" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20495258" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.25840336" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.49789914" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32983193" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gestionclients/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionarticles/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionfactures/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionstockages/models.py" />
+    <entry file="file://$PROJECT_DIR$/gestionstockages/urls.py" />
+    <entry file="file://$PROJECT_DIR$/gestionpersonnels/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/modifier_role.html" />
+    <entry file="file://$PROJECT_DIR$/gestionpersonnels/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/personnels_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="123" column="38" lean-forward="true" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionstockages/views.py" />
+    <entry file="file://$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/modifier_personnel.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/change_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionarticles/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genericfolder/templates/genericfolder/imported_css.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genericfolder/templates/genericfolder/base0.html" />
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/article_list_options.html" />
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/test.html" />
+    <entry file="file://$PROJECT_DIR$/genericfolder/templates/genericfolder/base1.html" />
+    <entry file="file://$PROJECT_DIR$/gestionclients/templates/gestionclients/clients_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionfournisseurs/templates/gestionfournisseurs/fournisseurs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genericfolder/templates/genericfolder/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionfournisseurs/templates/gestionfournisseurs/fournisseurs_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="129" column="106" selection-start-line="129" selection-start-column="69" selection-end-line="129" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/static/gestioncommandes/js/commandeScripts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/migrations/0002_auto_20200909_1850.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commandes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionarticles/templates/gestionarticles/article_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="105" selection-start-line="35" selection-start-column="105" selection-end-line="35" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genericfolder/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="88" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/modifier_commande.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionclients/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionpersonnels/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionarticles/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="41" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionfournisseurs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionarticles/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionauthentifications/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionstocks/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionauthentifications/templates/gestionauthentifications/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#2712#2719#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/services/commandeService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/genericfolder/templates/genericfolder/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="64" column="81" selection-start-line="64" selection-start-column="81" selection-end-line="64" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#b#0;n#a#0;n#li#1;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#b#0;n#a#0;n#li#3;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#b#0;n#a#0;n#li#7;n#ul#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#b#0;n#a#0;n#li#9;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionauthentifications/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/ajouter_commande.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionfactures/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="96" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionfactures/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/edit_commande_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,64 @@
+{% extends 'genericfolder/base.html' %}
+{% load static %}
+{% block title %}
+Gestion des commandes
+<button onclick="location.href='{% url 'gestioncommandes:ajouter_commande'%}';"
+        class="btn btn-warning btn-xs"><i class="fa fa-plus"> Ajouter Commande</i>
+</button>
+{% endblock %}
+
+{% block contenu %}
+{% if commandelist %}
+<div class="content-panel">
+    <div class="adv-table">
+        <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+            <thead>
+            <tr>
+                <th> #</th>
+                <th> Libellé commande</th>
+                <th> Date</th>
+                <th> Client</th>
+                <th> Personnel</th>
+                <th> Prix HT</th>
+                <th> Prix TTC</th>
+
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for c in commandelist %}
+            <tr>
+                <td> {{ forloop.counter }}</td>
+                <td> {{ c.libelle}}</td>
+                <td> {{ c.date}}</td>
+                <td> {{ c.client}}</td>
+                <td> {{ c.personnel}}</td>
+                <td> {{ c.total_prix_ht}}</td>
+                <td> {{ c.total_prix_ttc}}</td>
+
+                <td>
+                    <button onclick="location.href='{% url 'gestioncommandes:affiche_commande' c.id %}';"
+                            class="btn btn-success btn-xs"><i class="fa fa-eye"></i>
+                    </button>
+                    <button {% if user.is_superuser %}  onclick="if(confirm('êtes-vous sûr de vouloir modifier la commande '+'{{c.libelle}} '+' ?')){location.href='{% url 'gestioncommandes:modifier_commande' c.id %}'};"
+                     {% else %}  {% endif %}    class="btn btn-primary btn-xs">
+                       <i class="fa fa-pencil"></i>
+                    </button>
+
+                    <button onclick="location.href='{% url 'gestionfactures:generate_facture' c.id %}';"
+                            class="btn btn-theme02 btn-xs"><i class="fa fa-save"></i>
+                    </button>
+                    <button {% if user.is_superuser %}  onclick="if(confirm('êtes-vous sûr de vouloir supprimer la commande '+'{{c.libelle}} '+' ?')){location.href='{% url 'gestioncommandes:delete_commande' c.id %}'};"
+                     {% else %}  {% endif %}    class="btn btn-danger btn-xs">
+                        <i class="fa fa-trash-o "></i>
+                    </button>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}

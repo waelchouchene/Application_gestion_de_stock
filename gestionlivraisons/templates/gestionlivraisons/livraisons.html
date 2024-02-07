@@ -1,0 +1,12 @@
+{% extends 'gestionlivraisons/livraisons_base.html' %}
+{% load static %}
+
+{% block subtitle %} Ajouter une livraison {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionlivraisons:ajouter_livraison' %}
+{% endblock %}
+
+{% block action_name %}
+    Ajouter
+{% endblock %}

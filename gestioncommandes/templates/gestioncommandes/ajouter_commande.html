@@ -1,0 +1,48 @@
+{% extends 'gestioncommandes/edit_commande_base.html' %}
+{% load static %}
+
+{% block title %}
+    Ajouter Commande
+{% endblock %}
+
+{% block detailsBlock %}
+<span style="font-size:bold;font-size:18px;">Détails de la commande</span>
+<button id="deleteCommandDetail" type="button" class="btn btn-danger btn-xs"><i class="fa fa-minus"></i></button>
+<button id="addCommandDetail" type="button" class="btn btn-success btn-xs"><i class="fa fa-plus"></i></button>
+<div id="commandDetailDiv">
+    <div class="row row-sm-offset">
+        <div class="col-md-6 multi-horizontal">
+            <div class="form-group">
+                <label class="form-control-label mbr-fonts-style display-7">
+                    Article 1
+                </label>
+                <select required class="form-control" name="article_1">
+                    <option></option>
+                    {% for article in articlelist %}
+                        <option {% if article == commande.article %}selected="selected" {%endif %}
+                                value="{{ article.id }}">{{article.designation}}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="col-md-6 multi-horizontal">
+            <div class="form-group">
+                <label class="form-control-label mbr-fonts-style display-7">
+                    Quantité
+                </label>
+                <input type="number" class="form-control"
+                       name="quantite_1" min="0" data-form-field="name" required="">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block action %}
+    {% url 'gestioncommandes:ajouter_commande'%}
+{% endblock %}
+
+{% block actionName %}
+    Ajouter
+{% endblock %}

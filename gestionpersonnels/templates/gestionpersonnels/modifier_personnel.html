@@ -1,0 +1,12 @@
+{% extends 'gestionpersonnels/personnels_base.html' %}
+{% load static %}
+
+{% block subtitle %} Modifier le personnel: {{personnel.prenom }} {{ personnel.nom }} {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionpersonnels:save_personnel' personnel.id %}
+{% endblock %}
+
+{% block action_name %}
+    Sauvegarder
+{% endblock %}

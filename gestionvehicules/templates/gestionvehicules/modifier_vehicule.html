@@ -1,0 +1,12 @@
+{% extends 'gestionvehicules/vehicules_base.html' %}
+{% load static %}
+
+{% block subtitle %} Modifier le véhicule {{vehicule.id }}  {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionvehicules:save_vehicule' vehicule.id %}
+{% endblock %}
+
+{% block action_name %}
+    Sauvegarder
+{% endblock %}

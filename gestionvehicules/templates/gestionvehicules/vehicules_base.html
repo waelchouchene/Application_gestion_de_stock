@@ -1,0 +1,112 @@
+{% extends 'genericfolder/base.html' %}
+{% load static %}
+
+{% block title %} Gestion des véhicules {% endblock %}
+
+{% block contenu %}
+<div class="row mt">
+  {% if vehiculelist %}
+    <div class="content-panel">
+      <div class="adv-table">
+        <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+          <thead>
+            <tr>
+                <th> #</th>
+                <th> Matricule</th>
+                <th> Type</th>
+                <th> Chauffeur</th>
+                <th> Véhicule</th>
+
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for v in vehiculelist %}
+            <tr>
+                <td> {{ forloop.counter }}</td>
+                <td> {{ v.matricule}}</td>
+                <td> {{ v.type }}</td>
+                <td> {{ v.chauffeur.nom }}</td>
+                <td> {{ v.matricule }}</td>
+                <td>
+                    <button onclick="if(confirm('êtes-vous sûr de vouloir modifier le véhicule '+'{{v.id}} '+' ?'))location.href='{% url 'gestionvehicules:modifier_vehicule' v.id %}';"
+                            class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i>
+                    </button>
+                    <button onclick="if(confirm('êtes-vous sûr de vouloir supprimer le véhicule '+'{{v.id}} '+' ?')){location.href='{% url 'gestionvehicules:delete_vehicule' v.id %}'};"
+                            class="btn btn-danger btn-xs">
+                        <i class="fa fa-trash-o "></i>
+                    </button>
+
+                </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="col-lg-12">
+    <h4><i class="fa fa-angle-right"></i> {% block subtitle %}{% endblock %}</h4>
+    <div class="form-panel">
+      {% if error_message %}
+      <div style="color: red;" data-form-alert="" class="danger">
+        {{error_message}}
+      </div>
+      <br>
+      {% endif %}
+
+        <form class="mbr-form" action="{% block form_action %}{% endblock %}" method="post"
+              enctype="multipart/form-data"
+              data-form-title="mobirise form"><input type="hidden" data-form-email="true">
+            {% csrf_token %}
+            <div class="row row-sm-offset">
+                <div class="col-md-4 multi-horizontal" data-for="id_agence">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7"
+                               for="phone-form1-2w">Matricule</label>
+                        <input value="{{vehicule.matricule}}" type="text" class="form-control"
+                               name="matricule" data-form-field="name"
+                               required="" id="matricule">
+                    </div>
+                </div>
+                <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Type</label>
+                        <input value ="{{vehicule.type}}" type="text" class="form-control"
+                               name="type" data-form-field="name"
+                               required="" id="type">
+                    </div>
+                </div>
+            </div>
+            <div class="row row-sm-offset">
+                <div class="col-md-8 multi-horizontal" data-for="nom">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7"
+                               for="name-form1-2w">Chauffeur </label>
+                        <select class="form-control" name="chauffeur">
+                    <option selected="selected"> </option>
+
+                        {% for personnel in personnellist %}
+                         <option {% if personnel == vehicule.chauffeur %}selected="selected" {% endif %}
+                                value="{{ personnel.nom }}">{{ personnel.nom}}
+                        </option>
+                        {% endfor %}
+                    </select>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <p align="left">
+                <button type="submit" class="btn btn-primary btn-lg">{% block action_name %}{% endblock %}</button>
+                <button type="reset" class="btn btn-default btn-lg">Annuler</button>
+            </p>
+        </form>
+    </div>
+      <!-- /form-panel -->
+  </div>
+</div>
+
+{% endblock %}

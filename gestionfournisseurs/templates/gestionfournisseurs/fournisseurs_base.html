@@ -1,0 +1,139 @@
+{% extends 'genericfolder/base.html' %}
+{% load static %}
+
+{% block title %} Gestion des fournisseurs {% endblock %}
+
+{% block contenu %}
+<div class="row mt">
+  {% if fournisseurlist %}
+    <div class="content-panel">
+      <div class="adv-table">
+        <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
+          <thead>
+            <tr>
+                <th> #</th>
+                <th> Nom</th>
+                <th> Prenom</th>
+                <th> Adresse</th>
+                <th> Téléphone</th>
+                <th> Email</th>
+                <th> N° Compte</th>
+                <th> N° Registre</th>
+                <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for f in fournisseurlist %}
+                 <tr>
+                     <td> {{ forloop.counter }} </td>
+                     <td> {{ f.nom}} </td>
+                     <td> {{ f.prenom }}</td>
+                     <td> {{ f.adresse }}</td>
+                     <td> {{ f.telephone }}</td>
+                     <td> {{ f.email }}</td>
+                     <td> {{ f.num_compte }}</td>
+                     <td> {{ f.num_registre_commerce }}</td>
+                     <td>
+                          <button onclick="if(confirm('êtes-vous sûr de vouloir modifier le fournisseur '+'{{f.nom}} {{f.prenom}}'+' ?')){location.href='{% url 'gestionfournisseurs:modifier_fournisseur' f.id %}'};"
+                                 class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i>
+                        </button>
+                         <button onclick="if(confirm('êtes-vous sûr de vouloir supprimer le fournisseur '+'{{f.nom}} {{f.prenom}}'+' ?')){location.href='{% url 'gestionfournisseurs:delete_fournisseur' f.id %}'};"
+                                 class="btn btn-danger btn-xs">
+                             <i class="fa fa-trash-o "></i>
+                         </button>
+                     </td>
+                 </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="col-lg-12">
+    <h4><i class="fa fa-angle-right"></i> {% block subtitle %}{% endblock %}</h4>
+    <div class="form-panel">
+      {% if error_message %}
+      <div style="color: red;" data-form-alert="" class="danger">
+        {{error_message}}
+      </div>
+      <br>
+      {% endif %}
+
+        <form class="mbr-form" action="{% block form_action %}{% endblock %}" method="post" enctype="multipart/form-data"
+              data-form-title="mobirise form"><input type="hidden" data-form-email="true"
+                    value="axfogvwuump8ym5iqnpcfguee84qddgqwtfyccty/nivpcifng9aez3ckqlaoee0mwp/exbnafpnafey0pcqlm3nvxs2fy47xr3ugd+ll4efstaciz6q0pl4o5jlrxgr">
+            {% csrf_token %}
+            <div class="row row-sm-offset">
+                <div class="col-md-4 multi-horizontal" data-for="id_agence">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Nom</label>
+                         <input value="{{fournisseur.nom}}" type="text" class="form-control" name="nom" data-form-field="name"
+                               required="" id="nom">
+                    </div>
+                </div>
+                <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Prénom</label>
+                         <input value="{{fournisseur.prenom}}" type="text" class="form-control" name="prenom" data-form-field="name"
+                               required="" id="prenom">
+                    </div>
+                </div>
+            </div>
+            <div class="row row-sm-offset">
+                <div class="col-md-8 multi-horizontal" data-for="nom">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7"
+                               for="name-form1-2w">Adresse </label>
+                        <input value="{{fournisseur.adresse}}" type="text" class="form-control" name="adresse" data-form-field="name"
+                               required="" id="adresse">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row-sm-offset">
+                <div class="col-md-4 multi-horizontal" data-for="prenom">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Téléphone</label>
+                        <input value="{{fournisseur.telephone}}" type="tel" class="form-control" name="telephone" data-form-field="name"
+                               required id="telephone">
+                    </div>
+                </div>
+                <div class="col-md-4 multi-horizontal" data-for="email">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="email-form1-2w">Email</label>
+                        <input value="{{fournisseur.email}}" type="email" class="form-control" name="email" data-form-field="email"
+                               required id="email">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row row-sm-offset">
+                <div class="col-md-4 multi-horizontal" data-for="profession">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w"><span {% if error_message %}style="color: red;"{% endif %}>Numéro de registre commerce</span></label>
+                        <input value="{{fournisseur.num_registre_commerce}}" type="tel" class="form-control" name="numregistrecommerce" data-form-field="username"
+                               required id="numregistrecommerce">
+                    </div>
+                </div>
+                <div class="col-md-4 multi-horizontal" data-for="phone">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Numéro de compte</label>
+                        <input value="{{fournisseur.num_compte}}"  type="tel" class="form-control" name="numcompte" data-form-field="phone"
+                               required id="numcompte">
+                    </div>
+                </div>
+
+            </div>
+
+            <p align="left">
+                <button type="submit" class="btn btn-primary btn-lg">{% block action_name %}{% endblock %}</button>
+                <button type="reset" class="btn btn-default btn-lg">Annuler</button>
+            </p>
+        </form>
+    </div>
+    <!-- /form-panel -->
+  </div>
+</div>
+
+{% endblock %}

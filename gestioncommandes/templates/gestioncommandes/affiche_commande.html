@@ -1,0 +1,158 @@
+{% extends 'genericfolder/base.html' %}
+{% load static %}
+
+{% block css %}
+    <style>
+        .bold{
+            font-weight:bold;
+            color: black;
+        }
+    </style>
+{% endblock %}
+{% block title %}
+    {{commande.libelle}}
+<div class="btn-group pull-right">
+    <button type="button" class="btn btn-theme04 dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        Action <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="{% url 'gestionfactures:generate_facture' commande.id %}">Enregistrer Facture</a></li>
+
+        <li><a style="cursor: pointer;"
+               onclick="if(confirm('êtes-vous sûr de vouloir modifier la commande '+'{{commande.libelle}} '+' ?')){location.href='{% url 'gestioncommandes:modifier_commande' commande.id %}'};">
+            Modifier Commande</a></li>
+           <li><a style="cursor: pointer;"
+               onclick="if(confirm('êtes-vous sûr de vouloir modifier la commande '+'{{commande.libelle}} '+' ?')){location.href='{% url 'gestioncommandes:delete_commande' commande.id %}'};">
+            Supprimer Commande</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block contenu %}
+    <div class="col-lg-12">
+        <div class="form-panel">
+            <form class="mbr-form">
+                <div class="row row-sm-offset">
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold" for="phone-form1-2w">
+                                Date commande
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12" for="phone-form1-2w">
+                                {{commande.date}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Personnel
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {% if commande.personnel %}{{commande.personnel}}{% else %}Superuser{% endif %}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Client
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.client}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row row-sm-offset">
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold" for="phone-form1-2w">
+                                Adresse
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12" for="phone-form1-2w">
+                                {{commande.client.adresse}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Téléphone
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.client.telephone}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Email
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.client.email}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row row-sm-offset">
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Prix HT
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.total_prix_ht}}
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Prix TTC
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{commande.total_prix_ttc}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-sm-offset">
+                    <div class="col-md-12 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                <h3>Détails de la commande</h3>
+                            </label>
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Article</th>
+                            <th>Quantité</th>
+                            <th>Prix HT</th>
+                            <th>Prix TTC</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for dc in commande.detailscommande_set.all %}
+                          <tr>
+                            <td>{{forloop.counter}}</td>
+                            <td>{{dc.article.designation}}</td>
+                            <td>{{dc.qtecommande}}</td>
+                            <td>{{dc.prix_ht}}</td>
+                            <td>{{dc.prix_ttc}}</td>
+                          </tr>
+                        {% endfor %}
+                        </tbody>
+                      </table>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

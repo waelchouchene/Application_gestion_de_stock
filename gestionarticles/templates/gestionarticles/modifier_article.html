@@ -1,0 +1,12 @@
+{% extends 'gestionarticles/article_base.html' %}
+{% load static %}
+
+{% block subtitle %} Modifier l'article {{ article.designation }} {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionarticles:save_article' article.id %}
+{% endblock %}
+
+{% block action_name %}
+    Sauvegarder
+{% endblock %}

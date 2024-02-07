@@ -1,0 +1,12 @@
+{% extends 'gestionvehicules/vehicules_base.html' %}
+{% load static %}
+
+{% block subtitle %} Ajouter un véhicule {% endblock %}
+
+{% block form_action %}
+    {% url 'gestionvehicules:ajouter_vehicule' %}
+{% endblock %}
+
+{% block action_name %}
+    Ajouter
+{% endblock %}
