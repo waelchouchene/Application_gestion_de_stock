@@ -4,7 +4,18 @@
     <bookmark url="file://$PROJECT_DIR$/gestioncommandes/views.py" line="35" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c01ec968-96fb-47cb-a912-32f67cf50f6e" name="Default Changelist" comment="" />
+    <list default="true" id="c01ec968-96fb-47cb-a912-32f67cf50f6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestioncommandes/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestioncommandes/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionlivraisons/templates/gestionlivraisons/livraisons_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestionlivraisons/templates/gestionlivraisons/livraisons_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionlivraisons/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestionlivraisons/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionpersonnels/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestionpersonnels/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionvehicules/templates/gestionvehicules/vehicules_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/gestionvehicules/templates/gestionvehicules/vehicules_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionvehicules/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestionvehicules/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +27,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestioncommandes/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="416">
               <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gestionlivraisons/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -35,19 +58,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html">
+        <entry file="file://$PROJECT_DIR$/gestionpersonnels/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestionfactures/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="96" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="96" />
+            <state relative-caret-position="380">
+              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -56,13 +70,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestionfactures/views.py">
+        <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="417">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -70,26 +81,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/edit_commande_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+            <state relative-caret-position="240">
+              <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gestionstocks/settings.py">
+        <entry file="file://$PROJECT_DIR$/gestionlivraisons/templates/gestionlivraisons/livraisons_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="425">
+              <caret line="70" column="75" selection-start-line="70" selection-start-column="75" selection-end-line="70" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -106,9 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;/form&gt;</find>
-      <find>service</find>
-      <find>Stock</find>
       <find>user_id</find>
       <find>css</find>
       <find>se c</find>
@@ -136,6 +135,9 @@
       <find>Enter your e-mail address below to reset your password.</find>
       <find>calculate_ht_ttc</find>
       <find>updateCommadeHtTtc</find>
+      <find>l.vehicule</find>
+      <find>date</find>
+      <find>commande</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Nader\wael-project\projetstock\gestiondestock\gestionarticles</dir>
@@ -147,16 +149,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gestionauthentification/templates/gestion_authentification/login.html" />
-        <option value="$PROJECT_DIR$/gestionauthentification/urls.py" />
-        <option value="$PROJECT_DIR$/gestionauthentification/apps.py" />
-        <option value="$PROJECT_DIR$/gestionauthentification/views.py" />
-        <option value="$PROJECT_DIR$/gestionauthentifications/templates/gestion_authentification/login.html" />
-        <option value="$PROJECT_DIR$/gestionstocks/settings.py" />
         <option value="$PROJECT_DIR$/gestionauthentifications/views.py" />
         <option value="$PROJECT_DIR$/gestionpersonnels/urls.py" />
         <option value="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/modifier_role.html" />
-        <option value="$PROJECT_DIR$/gestionpersonnels/models.py" />
         <option value="$PROJECT_DIR$/genericfolder/models.py" />
         <option value="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/personnels.html" />
         <option value="$PROJECT_DIR$/genericfolder/apps.py" />
@@ -174,7 +169,6 @@
         <option value="$PROJECT_DIR$/gestionstockages/templates/gestionstockages/stockages_base.html" />
         <option value="$PROJECT_DIR$/gestionstocks/utils.py" />
         <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/test2.html" />
-        <option value="$PROJECT_DIR$/gestionclients/templates/gestionclients/clients_base.html" />
         <option value="$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/personnels_base.html" />
         <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/test.html" />
         <option value="$PROJECT_DIR$/gestionstocks/models.py" />
@@ -184,7 +178,6 @@
         <option value="$PROJECT_DIR$/gestioncommandes/urls.py" />
         <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/modifier_commande.html" />
         <option value="$PROJECT_DIR$/gestionarticles/templates/gestionarticles/article_base.html" />
-        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html" />
         <option value="$PROJECT_DIR$/gestionarticles/views.py" />
         <option value="$PROJECT_DIR$/gestionclients/views.py" />
         <option value="$PROJECT_DIR$/gestioncommandes/views.py" />
@@ -197,14 +190,23 @@
         <option value="$PROJECT_DIR$/gestionauthentifications/templates/gestionauthentifications/login.html" />
         <option value="$PROJECT_DIR$/genericfolder/templates/genericfolder/menu.html" />
         <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/edit_commande_base.html" />
+        <option value="$PROJECT_DIR$/gestionclients/templates/gestionclients/clients_base.html" />
+        <option value="$PROJECT_DIR$/gestionvehicules/views.py" />
+        <option value="$PROJECT_DIR$/gestionvehicules/templates/gestionvehicules/vehicules_base.html" />
+        <option value="$PROJECT_DIR$/gestionlivraisons/models.py" />
+        <option value="$PROJECT_DIR$/gestionlivraisons/views.py" />
+        <option value="$PROJECT_DIR$/gestioncommandes/admin.py" />
+        <option value="$PROJECT_DIR$/gestionpersonnels/models.py" />
         <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html" />
+        <option value="$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html" />
+        <option value="$PROJECT_DIR$/gestionlivraisons/templates/gestionlivraisons/livraisons_base.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="320" />
-    <option name="y" value="29" />
-    <option name="width" value="1598" />
+    <option name="x" value="1119" />
+    <option name="y" value="17" />
+    <option name="width" value="1127" />
     <option name="height" value="1092" />
   </component>
   <component name="ProjectId" id="1gMS57ZMGGqVm5Kdv0jrHBeDZh9" />
@@ -225,7 +227,54 @@
             <path>
               <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
               <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
-              <item name="gestionstocks" type="462c0819:PsiDirectoryNode" />
+              <item name="gestionclients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+              <item name="gestioncommandes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+              <item name="gestioncommandes" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+              <item name="gestioncommandes" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+              <item name="gestioncommandes" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="gestioncommandes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+              <item name="gestionlivraisons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+              <item name="gestionlivraisons" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+              <item name="gestionlivraisons" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="gestionlivraisons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gestiondestock" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gestiondestock" type="462c0819:PsiDirectoryNode" />
+              <item name="gestionpersonnels" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -266,8 +315,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20495258" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16754478" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25840336" />
@@ -278,7 +328,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.49789914" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3760504" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32983193" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -287,61 +337,9 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gestionarticles/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionfactures/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionstockages/models.py" />
-    <entry file="file://$PROJECT_DIR$/gestionstockages/urls.py" />
-    <entry file="file://$PROJECT_DIR$/gestionpersonnels/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/modifier_role.html" />
-    <entry file="file://$PROJECT_DIR$/gestionpersonnels/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/personnels_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="123" column="38" lean-forward="true" selection-start-line="123" selection-start-column="38" selection-end-line="123" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionstockages/views.py" />
-    <entry file="file://$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/modifier_personnel.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestionpersonnels/templates/gestionpersonnels/change_password.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionarticles/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/genericfolder/templates/genericfolder/imported_css.html">
@@ -351,13 +349,6 @@
     <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/article_list_options.html" />
     <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/test.html" />
     <entry file="file://$PROJECT_DIR$/genericfolder/templates/genericfolder/base1.html" />
-    <entry file="file://$PROJECT_DIR$/gestionclients/templates/gestionclients/clients_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestioncommandes/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -390,24 +381,10 @@
         <state relative-caret-position="-334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestioncommandes/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commandes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="4" selection-start-line="5" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionarticles/templates/gestionarticles/article_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="105" selection-start-line="35" selection-start-column="105" selection-end-line="35" selection-end-column="105" />
         </state>
       </provider>
     </entry>
@@ -448,13 +425,6 @@
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestionarticles/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="41" selection-start-line="7" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -549,30 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestioncommandes/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/ajouter_commande.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gestionfactures/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -593,24 +539,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html">
+    <entry file="file://$PROJECT_DIR$/gestionstocks/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        <state relative-caret-position="323">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionclients/templates/gestionclients/clients_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionarticles/templates/gestionarticles/article_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1216">
+          <caret line="35" column="105" selection-start-line="35" selection-start-column="105" selection-end-line="35" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionvehicules/templates/gestionvehicules/vehicules_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="94" column="29" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="94" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionvehicules/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionarticles/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="31" column="57" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionvehicules/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionclients/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionclients/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionarticles/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionlivraisons/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionpersonnels/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionlivraisons/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/affiche_commande.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="42" column="49" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/ajouter_commande.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/edit_commande_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+        <state relative-caret-position="240">
+          <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gestionstocks/settings.py">
+    <entry file="file://$PROJECT_DIR$/gestioncommandes/templates/gestioncommandes/commande_base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="417">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gestionlivraisons/templates/gestionlivraisons/livraisons_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="70" column="75" selection-start-line="70" selection-start-column="75" selection-end-line="70" selection-end-column="75" />
         </state>
       </provider>
     </entry>

@@ -73,7 +73,7 @@
                 <div class="col-md-4 multi-horizontal" data-for="code_postale">
                     <div class="form-group">
                         <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Type</label>
-                        <input value ="{{vehicule.type}}" type="text" class="form-control"
+                        <input value ="{{vehicule.id}}" type="text" class="form-control"
                                name="type" data-form-field="name"
                                required="" id="type">
                     </div>
@@ -89,7 +89,7 @@
 
                         {% for personnel in personnellist %}
                          <option {% if personnel == vehicule.chauffeur %}selected="selected" {% endif %}
-                                value="{{ personnel.nom }}">{{ personnel.nom}}
+                                value="{{ personnel.id }}">{{ personnel.nom}}
                         </option>
                         {% endfor %}
                     </select>

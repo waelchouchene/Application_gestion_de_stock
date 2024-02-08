@@ -21,6 +21,7 @@
         <li><a style="cursor: pointer;"
                onclick="if(confirm('êtes-vous sûr de vouloir modifier la commande '+'{{commande.libelle}} '+' ?')){location.href='{% url 'gestioncommandes:modifier_commande' commande.id %}'};">
             Modifier Commande</a></li>
+            Modifier Commande</a></li>
            <li><a style="cursor: pointer;"
                onclick="if(confirm('êtes-vous sûr de vouloir modifier la commande '+'{{commande.libelle}} '+' ?')){location.href='{% url 'gestioncommandes:delete_commande' commande.id %}'};">
             Supprimer Commande</a></li>

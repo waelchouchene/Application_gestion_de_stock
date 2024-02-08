@@ -22,7 +22,9 @@ def vehicules(request):
 def ajouter_vehicule(request):
     matricule = request.POST['matricule']
     type = request.POST['type']
-    chauffeur = request.POST['chauffeur']
+    #chauffeur = request.POST['chauffeur']
+    idchauffeur=request.POST['chauffeur']
+    chauffeur=Personnel.objects.get(pk=idchauffeur)
     vehiculelist=Vehicule.objects.all()
     if (Vehicule.objects.filter(matricule=matricule).exists()):
         error_message = "Véhicule existe déja"
@@ -48,8 +50,9 @@ def save_vehicule(request, id):
     if request.method == "POST":
         matricule = request.POST['matricule']
         type = request.POST['type']
-        chauffeur = request.POST['chauffeur']
-
+        #chauffeur = request.POST['chauffeur']
+        idchauffeur=request.POST['chauffeur']
+        chauffeur=Personnel.objects.get(pk=idchauffeur)
         v.matricule = matricule
         v.type = type
         v.chauffeur = chauffeur
