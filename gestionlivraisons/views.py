@@ -26,14 +26,13 @@ def livraisons(request):
 
 def ajouter_livraison(request):
     date = request.POST['date']
-    montant_total = request.POST['montant_total']
-    # commande = request.POST['commande']
     idcommande=request.POST['commande']
     commande=Commande.objects.get(pk=idcommande)
-    #vehicule = request.POST['vehicule']
-    idcvehicule=request.POST['vehicule']
-    vehicule=Vehicule.objects.get(pk=idcvehicule)
-    l = Livraison(date=date,montant_total=montant_total,commande=commande,vehicule=vehicule)
+    idvehicule=request.POST['vehicule']
+    vehicule=Vehicule.objects.get(pk=idvehicule)
+    idchauffeur=request.POST['chauffeur']
+    chauffeur=Personnel.objects.get(pk=idchauffeur)
+    l = Livraison(date=date,commande=commande,vehicule=vehicule,chauffeur=chauffeur)
     l.save()
     return HttpResponseRedirect(reverse('gestionlivraisons:livraisons'))
 
@@ -42,14 +41,17 @@ def save_livraison(request, id):
     if request.method == "POST":
         date = request.POST['date']
         montant_total = request.POST['montant_total']
-        commande = request.POST['commande']
-        #vehicule = request.POST['vehicule']
-        idcvehicule=request.POST['vehicule']
-        vehicule=Vehicule.objects.get(pk=idcvehicule)
+        idcommande=request.POST['commande']
+        commande=Commande.objects.get(pk=idcommande)
+        idvehicule=request.POST['vehicule']
+        vehicule=Vehicule.objects.get(pk=idvehicule)
+        idchauffeur=request.POST['chauffeur']
+        chauffeur=Personnel.objects.get(pk=idchauffeur)
         l.date = date
         l.montant_total = montant_total
         l.commande = commande
         l.vehicule = vehicule
+        l.chauffeur = chauffeur
         l.save()
     return HttpResponseRedirect(reverse('gestionlivraisons:livraisons'))
 
@@ -58,6 +60,7 @@ def modifier_livraison(request, id):
     livraisontlist = Livraison.objects.all()
     vehiculetlist = Vehicule.objects.all()
     commandelist=Commande.objects.all()
+    personnellist=Personnel.objects.all()
     return render(request, 'gestionlivraisons/modifier_livraison.html', {'livraisonsMenu':'active', 'livraison':l,
                                                                          'livraisontlist':livraisontlist,'vehiculetlist':vehiculetlist,
                                                                          'commandelist':commandelist,'personnellist':personnellist})

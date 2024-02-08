@@ -13,10 +13,8 @@
             <tr>
                 <th> #</th>
                 <th> Date Livraison</th>
-                <th> Montant Commande</th>
                 <th> Chauffeur</th>
                 <th> Véhicule</th>
-                <th> Prix total</th>
 
               <th></th>
             </tr>
@@ -26,10 +24,8 @@
             <tr>
                 <td> {{ forloop.counter }}</td>
                 <td> {{ l.commande.date}}</td>
-                <td> {{ l.commande.total_prix_ttc }}</td>
-                <td> {{ l.vehicule.chauffeur.nom }}{{ l.vehicule.chauffeur.prenom }}</td>
+                <td> {{ l.chauffeur.nom }}{{ l.chauffeur.prenom }}</td>
                 <td> {{ l.vehicule.matricule }}</td>
-                <td> {{ l.commande.total_prix_ttc }}</td>
 
                 <td>
                     <button onclick="if(confirm('êtes-vous sûr de vouloir modifier la livraison '+'{{l.id}} '+' ?'))location.href='{% url 'gestionlivraisons:modifier_livraison' l.id %}';"
@@ -68,17 +64,22 @@
                     <div class="form-group">
                         <label class="form-control-label mbr-fonts-style display-7"
                                for="phone-form1-2w">Date livraison</label>
-                       <input value="{% if livraison.date %}{{ livraison.date|date:'d-m-Y' }}{% else %}{% now 'd-m-Y' %}{% endif %}" type="date-local" class="form-control"
-                               name="date" data-form-field="name"
-                               required="" id="date" >
+                      <input name="date" required class="form-control form-control-inline input-medium default-date-picker"
+                                   value="{% if livraison.date %}{{ livraison.date|date:'Y-m-d' }}{% else %}{% now 'Y-m-d' %}{% endif %}"
+                                   size="16" type="date" id="date">
                     </div>
                 </div>
                 <div class="col-md-4 multi-horizontal" data-for="code_postale">
                     <div class="form-group">
-                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Montant total</label>
-                        <input value ="{{livraison.commande.total_prix_ttc}}" type="text" class="form-control"
-                               name="montant_total" data-form-field="name"
-                               required="" id="montant_total">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Véhicule</label>
+                        <select required class="form-control" name="vehicule">
+                    <option></option>
+                    {% for vehicule in vehiculelist %}
+                        <option {% if vehicule == livraison.vehicule %}selected="selected" {%endif %}
+                                value="{{ vehicule.id }}">{{vehicule.matricule}}
+                        </option>
+                    {% endfor %}
+                </select>
                     </div>
                 </div>
             </div>
@@ -87,7 +88,7 @@
                     <div class="form-group">
                         <label class="form-control-label mbr-fonts-style display-7"
                                for="name-form1-2w">Commande </label>
-                        <select class="form-control" name="chauffeur">
+                        <select class="form-control" name="commande">
                     <option selected="selected"> </option>
 
                         {% for commande in commandelist %}

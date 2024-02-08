@@ -12,6 +12,7 @@ class Livraison(models.Model):
     montant_total = models.FloatField()
     commande = models.ForeignKey(Commande, models.DO_NOTHING)
     vehicule = models.ForeignKey(Vehicule, models.DO_NOTHING)
+    chauffeur = models.ForeignKey(Personnel, models.DO_NOTHING)
 
     def __str__(self):
             return self.commande.libelle
