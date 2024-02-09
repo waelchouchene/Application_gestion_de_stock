@@ -75,6 +75,9 @@
 
         <!-- modal -->
       </form>
+      <div style="text-align: center" class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 607px; width: 1920px; z-index: -999999; position: fixed;">
+        <img src="{% static 'genericfolder/img/gestionstock.jpg' %}" height= 600px width= 600px; >
+      </div>
     </div>
   </div>
   <!-- js placed at the end of the document so the pages load faster -->
@@ -90,6 +93,12 @@
 <!--      speed: 500-->
 <!--    });-->
 <!--  </script>-->
+
+  <script>
+    $.backstretch("{% static 'genericfolder/img/gestionstock.jpg' %}", {
+      speed: 500
+    });
+  </script>
 </body>
 
 </html>
