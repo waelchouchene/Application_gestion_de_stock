@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import DetailsCommande, Commande
+from .models import DetailsCommande
 
 # Register your models here.
 
@@ -7,8 +7,4 @@ from .models import DetailsCommande, Commande
 
 @admin.register(DetailsCommande)
 class AuthorDetailsCommande(admin.ModelAdmin):
-    pass
-
-@admin.register(Commande)
-class AuthorCategorie(admin.ModelAdmin):
     pass

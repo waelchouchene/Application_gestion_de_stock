@@ -26,5 +26,3 @@ class Personnel(models.Model):
     class Meta:
         managed = True
         db_table = 'personnel'
-    def __str__(self):
-        return self.nom +' '+self.prenom

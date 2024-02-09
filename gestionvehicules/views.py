@@ -15,14 +15,12 @@ def vehicules(request):
 
     vehiculelist = Vehicule.objects.all()
     personnellist = Personnel.objects.all()
-    print('******//////////********',vehiculelist)
     context = {'vehiculesmenu':'active', 'vehiculelist':vehiculelist,'personnellist':personnellist}
     return render(request, 'gestionvehicules/vehicules.html', context)
 
 def ajouter_vehicule(request):
     matricule = request.POST['matricule']
     type = request.POST['type']
-    #chauffeur = request.POST['chauffeur']
     idchauffeur=request.POST['chauffeur']
     chauffeur=Personnel.objects.get(pk=idchauffeur)
     vehiculelist=Vehicule.objects.all()
