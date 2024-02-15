@@ -1,1 +1,1 @@
-web: gunicorn gestiondestock.wsgi:application
+web: gunicorn gestionstocks.wsgi:application
