@@ -22,8 +22,8 @@ class Article(models.Model):
     quantite_stock = models.FloatField()
     prix_unitaire = models.FloatField()
     tva = models.FloatField()
-    categorie = models.ForeignKey(Categorie, models.DO_NOTHING)
-    fournisseur = models.ForeignKey(Fournisseur, models.DO_NOTHING)
+    categorie = models.ForeignKey(Categorie, models.DO_NOTHING,null=True)
+    fournisseur = models.ForeignKey(Fournisseur, models.DO_NOTHING,null=True)
 
     class Meta:
         managed = True

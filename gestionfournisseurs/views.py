@@ -3,7 +3,6 @@ from django.shortcuts import render
 from django.urls import reverse
 from .models import Fournisseur
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 # from generic_app.models import Agence, Assure
@@ -42,6 +41,7 @@ def delete_fournisseur(request, id):
 
 def modifier_fournisseur(request, id):
     f = Fournisseur.objects.get(pk=id)
+    print ('******',f.nom)
     fournisseurlist = Fournisseur.objects.all()
     return render(request, 'gestionfournisseurs/modifier_fournisseur.html', {'fournisseursMenu':'active','fournisseurlist':fournisseurlist,'fournisseur':f})
 
@@ -50,7 +50,9 @@ def save_fournisseur(request, id):
     f = Fournisseur.objects.get(pk=id)
     if request.method == "POST":
         nom = request.POST['nom']
+        print ('Nom = ',nom)
         prenom = request.POST['prenom']
+        print('Prénom = ',prenom)
         adresse = request.POST['adresse']
         telephone = request.POST['telephone']
         email = request.POST['email']
