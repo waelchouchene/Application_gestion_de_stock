@@ -97,12 +97,12 @@ WSGI_APPLICATION = 'gestionstocks.wsgi.application'
 #   }
 #}
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 # Base de données postgresql
 # DATABASES = {
@@ -115,11 +115,24 @@ WSGI_APPLICATION = 'gestionstocks.wsgi.application'
 #         'PORT': '5432',
 #     }
 # }
-DATABASES = {
-    {
-        'default': dj_database_url.parse(env('DATABASE_URL')),
-    }
-}
+# Base de données postgresql dans render
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'gestion_stock',
+#         'USER': 'gestion_stock_user',
+#         'PASSWORD': 'htCKOdr9YZaUAzDysKjdWX3KzZjoUIyr',
+#         'HOST': 'dpg-cn6gan8l5elc73fmsj30-a',
+#         'PORT': '5432',
+#     }
+# }
+
+
+# DATABASES = {
+#     {
+#         'default': dj_database_url.parse(env('DATABASE_URL')),
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
