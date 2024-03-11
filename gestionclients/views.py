@@ -39,6 +39,11 @@ def modifier_client(request, id):
 
 def delete_client(request, id):
     c = Client.objects.get(pk=id)
+    commandes = Commande.objects.filter(client=c)
+    for cmd in commandes:
+        for dc in cmd.detailscommande_set.all():
+            dc.delete()
+        cmd.delete()
     c.delete()
     return HttpResponseRedirect(reverse('gestionclients:clients'))
 

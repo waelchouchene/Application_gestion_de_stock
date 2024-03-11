@@ -15,7 +15,6 @@
                 <th> Nom</th>
                 <th> Prénom</th>
                  <th> Email</th>
-                <th> Service</th>
                 <th> Admin?</th>
               <th></th>
             </tr>
@@ -27,7 +26,6 @@
                 <td> {{ p.nom}}</td>
                 <td> {{ p.prenom}}</td>
                  <td> {{ p.email }}</td>
-                <td> {{ p.service.intitule }}</td>
                 <td> {{ p.is_admin }}</td>
 
 
@@ -91,7 +89,7 @@
             </div>
 
             <div class="row row-sm-offset">
-                <div class="col-md-4 multi-horizontal" data-for="id_agence">
+                <div class="col-md-8 multi-horizontal" data-for="id_agence">
                     <div class="form-group">
                         <label class="form-control-label mbr-fonts-style display-7"
                                for="phone-form1-2w">Email</label>
@@ -101,18 +99,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 multi-horizontal" data-for="code_postale">
-                    <div class="form-group">
-                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Service</label>
-                        <select class="form-control" name="service">
-                            <option selected="selected"> </option>
 
-                            {% for service in servicelist %}
-                                <option {% if service == personnel.service %}selected="selected" {% endif %}
-                                        value="{{ service.id }}">{{ service.intitule}}
-                                </option>
-                            {% endfor %}
-                        </select>
-                    </div>
                 </div>
             </div>
 

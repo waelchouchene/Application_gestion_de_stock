@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from gestionauthentifications.models import UserRole, Role
-from gestionpersonnels.models import Personnel, Service
+from gestionpersonnels.models import Personnel
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from gestioncommandes.models import Commande
@@ -13,9 +13,8 @@ from gestioncommandes.models import Commande
 @login_required(login_url='/gestionauthentifications/login')
 def personnels(request):
     personnellist = Personnel.objects.all()
-    servicelist=Service.objects.all()
     context = {'gestionPersonnelsMenu':'active','personnelsMenu':'active',
-               'personnellist': personnellist,'servicelist':servicelist}
+               'personnellist': personnellist}
     return render(request, 'gestionpersonnels/personnels.html', context)
 
 
@@ -25,18 +24,15 @@ def ajouter_personnel(request):
     pseudo = request.POST['pseudo']
     password = request.POST['password']
     email = request.POST['email']
-    idservice = request.POST['service']
     if request.POST.get("isadmin") == "checked":
         isadmin = True
     else:
         isadmin = False
     print(isadmin)
-    service = Service.objects.get(pk=idservice)
     if(not User.objects.filter(username=pseudo)):
         user = User.objects.create_user(username=pseudo, password=password)
         print(user)
-        p = Personnel(nom=nom,prenom=prenom,email=email,service=service,
-                      user=user,
+        p = Personnel(nom=nom,prenom=prenom,email=email,user=user,
                       is_admin=isadmin)
         p.save()
     return HttpResponseRedirect(reverse('gestionpersonnels:personnels'))
@@ -52,9 +48,8 @@ def delete_personnel(request, id):
 def modifier_personnel(request, id):
     p = Personnel.objects.get(pk=id)
     personnellist = Personnel.objects.all()
-    servicelist=Service.objects.all()
     context = {'personnelsMenu':'active','personnel':p,
-               'personnellist':personnellist,'servicelist':servicelist}
+               'personnellist':personnellist}
     return render(request, 'gestionpersonnels/modifier_personnel.html', context)
 #
 def save_personnel(request, id):
@@ -65,12 +60,9 @@ def save_personnel(request, id):
         prenom = request.POST['prenom']
         pseudo = request.POST['pseudo']
         email = request.POST['email']
-        idservice = request.POST['service']
-        service = Service.objects.get(pk=idservice)
         p.nom = nom
         p.prenom = prenom
         p.email = email
-        p.service = service
         if request.POST.get("isadmin") == "checked":
             isadmin = True
         else:

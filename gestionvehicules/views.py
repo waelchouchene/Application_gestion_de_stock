@@ -15,7 +15,7 @@ def vehicules(request):
 
     vehiculelist = Vehicule.objects.all()
     personnellist = Personnel.objects.all()
-    context = {'vehiculesmenu':'active', 'vehiculelist':vehiculelist,'personnellist':personnellist}
+    context = {'vehiculesMenu':'active', 'vehiculelist':vehiculelist,'personnellist':personnellist}
     return render(request, 'gestionvehicules/vehicules.html', context)
 
 def ajouter_vehicule(request):
@@ -26,7 +26,7 @@ def ajouter_vehicule(request):
     vehiculelist=Vehicule.objects.all()
     if (Vehicule.objects.filter(matricule=matricule).exists()):
         error_message = "Véhicule existe déja"
-        return render(request,'gestionvehicules/vehicules.html',{'error_message':error_message,'vehiculelist':vehiculelist})
+        return render(request,'gestionvehicules/vehicules.html',{'vehiculesmenu':'active','error_message':error_message,'vehiculelist':vehiculelist})
     else:
         v = Vehicule (matricule=matricule,type=type,chauffeur=chauffeur)
         v.save()

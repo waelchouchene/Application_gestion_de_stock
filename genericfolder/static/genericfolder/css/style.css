@@ -188,12 +188,8 @@ hr {
 	text-align: right;
 }
 
-/*.mt {
+.mt {
 	margin-top: 25px;
-}*/
-
-.sidebar-menu h5.centered {
-    margin-bottom: 50px;
 }
 
 .mb {
@@ -238,7 +234,7 @@ ul.top-menu > li > .logout {
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #2F32DD;
+    background: #2f323a;
 }
 
 #sidebar h5 {
@@ -419,7 +415,7 @@ ul.sidebar-menu li a.active i {
 }
 
 .black-bg {
-    background: #22248Ba;
+    background: black;
     border-bottom: 1px solid #393d46;
 }
 
@@ -1039,7 +1035,7 @@ PANELS CONFIGURATIONS
   background: white;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 1em;
-  height: 300px;
+  height: 250px;
 }
 .stock .stock-chart {
   background: #00c5de;

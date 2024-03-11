@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import DetailsCommande
-from .models import Commande
+from .models import DetailsCommande,Commande
 
 # Register your models here.
 

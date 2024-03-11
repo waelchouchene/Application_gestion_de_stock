@@ -15,7 +15,6 @@
               <th> Désignation</th>
               <th> Quantité en stock</th>
               <th> Prix unitaire</th>
-              <th> Catégorie</th>
               <th> TVA %</th>
               <th> Fournisseur </th>
               <th></th>
@@ -28,7 +27,6 @@
                 <td> {{ a.designation}}</td>
                 <td> {{ a.quantite_stock }}</td>
                 <td> {{ a.prix_unitaire }}</td>
-                <td> {{ a.categorie }} </td>
                 <td> {{ a.tva }}</td>
                 <td> {{ a.fournisseur }}</td>
 
@@ -97,18 +95,7 @@
                 </div>
             </div>
             <div class="col-md-4 multi-horizontal" data-for="prenom">
-                <div class="form-group">
-                    <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Catégorie</label>
-                    <select class="form-control" name="categorie">
-                    <option selected="selected"> </option>
 
-                        {% for categorie in categorielist %}
-                         <option {% if categorie == article.categorie %}selected="selected" {% endif %}
-                                value="{{ categorie.id  }}">{{ categorie.libelle}}
-                        </option>
-                        {% endfor %}
-                    </select>
-                </div>
             </div>
         </div>
         <div class="row row-sm-offset">

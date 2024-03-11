@@ -8,6 +8,7 @@ class Fournisseur(models.Model):
     nom = models.CharField(max_length=50)
     prenom = models.CharField(max_length=50)
     adresse = models.CharField(max_length=50)
+    fax= models.CharField(max_length=50,null=True)
     telephone = models.CharField(max_length=20)
     email = models.CharField(max_length=50)
     num_compte = models.IntegerField()

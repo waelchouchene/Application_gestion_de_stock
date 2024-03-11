@@ -11,8 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import environ
-import dj_database_url
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -26,7 +25,11 @@ SECRET_KEY = 'vnkz6w8mh3_fun$(7&z-fp0vq1pxji&15mt_ft@xt1=j^@4n&^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://ffaa-197-26-81-247.ngrok-free.app'
+]
 
 
 # Application definition
@@ -104,35 +107,8 @@ DATABASES = {
     }
 }
 
-# Base de données postgresql
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'db_stock',
-#         'USER': 'postgres',
-#         'PASSWORD': 'admin',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5432',
-#     }
-# }
-# Base de données postgresql dans render
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'gestion_stock',
-#         'USER': 'gestion_stock_user',
-#         'PASSWORD': 'htCKOdr9YZaUAzDysKjdWX3KzZjoUIyr',
-#         'HOST': 'dpg-cn6gan8l5elc73fmsj30-a',
-#         'PORT': '5432',
-#     }
-# }
 
 
-# DATABASES = {
-#     {
-#         'default': dj_database_url.parse(env('DATABASE_URL')),
-#     }
-# }
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -170,9 +146,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,"static")
-]
-MEDIA_URL='images/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'images/')
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

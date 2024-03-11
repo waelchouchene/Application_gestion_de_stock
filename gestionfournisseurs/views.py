@@ -3,6 +3,7 @@ from django.shortcuts import render
 from django.urls import reverse
 from .models import Fournisseur
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 # from generic_app.models import Agence, Assure
@@ -18,6 +19,7 @@ def ajouter_fournisseur(request):
     nom = request.POST['nom']
     prenom = request.POST['prenom']
     adresse = request.POST['adresse']
+    fax = request.POST['fax']
     telephone = request.POST['telephone']
     email = request.POST['email']
     numcompte = request.POST['numcompte']
@@ -25,6 +27,7 @@ def ajouter_fournisseur(request):
     f = Fournisseur(nom=nom,
                     prenom=prenom,
                     adresse=adresse,
+                    fax=fax,
                     telephone=telephone,
                     email=email,
                     num_compte=numcompte,
@@ -41,7 +44,6 @@ def delete_fournisseur(request, id):
 
 def modifier_fournisseur(request, id):
     f = Fournisseur.objects.get(pk=id)
-    print ('******',f.nom)
     fournisseurlist = Fournisseur.objects.all()
     return render(request, 'gestionfournisseurs/modifier_fournisseur.html', {'fournisseursMenu':'active','fournisseurlist':fournisseurlist,'fournisseur':f})
 
@@ -50,10 +52,9 @@ def save_fournisseur(request, id):
     f = Fournisseur.objects.get(pk=id)
     if request.method == "POST":
         nom = request.POST['nom']
-        print ('Nom = ',nom)
         prenom = request.POST['prenom']
-        print('Prénom = ',prenom)
         adresse = request.POST['adresse']
+        fax = request.POST['fax']
         telephone = request.POST['telephone']
         email = request.POST['email']
         numcompte = request.POST['numcompte']
@@ -61,6 +62,7 @@ def save_fournisseur(request, id):
         f.nom = nom
         f.nom = prenom
         f.adresse = adresse
+        f.fax = fax
         f.telephone = telephone
         f.email = email
         f.num_compte = numcompte

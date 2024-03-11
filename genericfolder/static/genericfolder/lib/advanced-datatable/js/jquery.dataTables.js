@@ -31,7 +31,7 @@
 	// Define as an AMD module if possible
 	if ( typeof define === 'function' && define.amd )
 	{
-		define( ['generic_app/static/generic_app/lib/advanced-datatable/js/jquery'], factory );
+		define( ['jquery'], factory );
 	}
 	/* Define using browser globals otherwise
 	 * Prevent multiple instantiations if the script is loaded twice

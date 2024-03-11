@@ -50,7 +50,6 @@ def affiche_commande(request,id):
     commande = Commande.objects.get(pk=id)
     context = {'commandesMenu': 'active', 'commande': commande}
     return render(request, 'gestioncommandes/affiche_commande.html', context)
-    return render(request, 'gestioncommandes/affiche_commande.html', context)
 
 
 def delete_commande(request, id):

@@ -33,6 +33,11 @@ def ajouter_livraison(request):
     idchauffeur=request.POST['chauffeur']
     chauffeur=Personnel.objects.get(pk=idchauffeur)
     l = Livraison(date=date,commande=commande,vehicule=vehicule,chauffeur=chauffeur)
+    print("***** TEST *****")
+    print(l.date)
+    print(l.commande)
+    print(l.chauffeur)
+    print(l.vehicule)
     l.save()
     return HttpResponseRedirect(reverse('gestionlivraisons:livraisons'))
 

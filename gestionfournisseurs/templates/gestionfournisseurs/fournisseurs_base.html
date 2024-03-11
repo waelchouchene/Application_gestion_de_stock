@@ -15,8 +15,9 @@
                 <th> Nom</th>
                 <th> Prenom</th>
                 <th> Adresse</th>
-                <th> Téléphone</th>
                 <th> Email</th>
+                <th> telephone</th>
+                <th> Fax</th>
                 <th> N° Compte</th>
                 <th> N° Registre</th>
                 <th></th>
@@ -29,8 +30,9 @@
                      <td> {{ f.nom}} </td>
                      <td> {{ f.prenom }}</td>
                      <td> {{ f.adresse }}</td>
-                     <td> {{ f.telephone }}</td>
                      <td> {{ f.email }}</td>
+                     <td> {{ f.telephone }}</td>
+                     <td> {{ f.fax }}</td>
                      <td> {{ f.num_compte }}</td>
                      <td> {{ f.num_registre_commerce }}</td>
                      <td>
@@ -81,22 +83,12 @@
                 </div>
             </div>
             <div class="row row-sm-offset">
-                <div class="col-md-8 multi-horizontal" data-for="nom">
+                <div class="col-md-4 multi-horizontal" data-for="nom">
                     <div class="form-group">
                         <label class="form-control-label mbr-fonts-style display-7"
                                for="name-form1-2w">Adresse </label>
                         <input value="{{fournisseur.adresse}}" type="text" class="form-control" name="adresse" data-form-field="name"
                                required="" id="adresse">
-                    </div>
-                </div>
-
-            </div>
-            <div class="row row-sm-offset">
-                <div class="col-md-4 multi-horizontal" data-for="prenom">
-                    <div class="form-group">
-                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Téléphone</label>
-                        <input value="{{fournisseur.telephone}}" type="tel" class="form-control" name="telephone" data-form-field="name"
-                               required id="telephone">
                     </div>
                 </div>
                 <div class="col-md-4 multi-horizontal" data-for="email">
@@ -106,6 +98,27 @@
                                required id="email">
                     </div>
                 </div>
+
+            </div>
+             <div class="row row-sm-offset">
+
+
+                <div class="col-md-4 multi-horizontal" data-for="prenom">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7" for="phone-form1-2w">Téléphone</label>
+                        <input value="{{fournisseur.telephone}}" type="tel" class="form-control" name="telephone" data-form-field="name"
+                               required id="telephone">
+                    </div>
+                </div>
+                 <div class="col-md-4 multi-horizontal" data-for="nom">
+                    <div class="form-group">
+                        <label class="form-control-label mbr-fonts-style display-7"
+                               for="name-form1-2w">Fax </label>
+                        <input value="{{fournisseur.fax}}" type="text" class="form-control" name="fax" data-form-field="name"
+                               required="" id="adresse">
+                    </div>
+                </div>
+
 
             </div>
             <div class="row row-sm-offset">
