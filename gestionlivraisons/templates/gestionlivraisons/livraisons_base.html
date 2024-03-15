@@ -13,10 +13,10 @@
             <tr>
                 <th> #</th>
                 <th> Date Livraison</th>
+                <th> Commande</th>
                 <th> Chauffeur</th>
                 <th> Véhicule</th>
-
-              <th></th>
+                <th></th>
             </tr>
           </thead>
           <tbody>
@@ -24,16 +24,22 @@
             <tr>
                 <td> {{ forloop.counter }}</td>
                 <td> {{ l.date}}</td>
+                <td> {{l.commande}}</td>
                 <td> {{ l.chauffeur.nom }}{{ l.chauffeur.prenom }}</td>
                 <td> {{ l.vehicule.matricule }}</td>
-
                 <td>
+                     <button onclick="location.href='{% url 'gestionlivraisons:affiche_livraison' l.id %}';"
+                            class="btn btn-success btn-xs"><i class="fa fa-eye"></i>
+                    </button>
                     <button onclick="if(confirm('êtes-vous sûr de vouloir modifier la livraison '+'{{l.id}} '+' ?'))location.href='{% url 'gestionlivraisons:modifier_livraison' l.id %}';"
                             class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i>
                     </button>
-                    <button onclick="if(confirm('êtes-vous sûr de vouloir supprimer la livraison '+'{{l.id}} '+' ?')){location.href='{% url 'gestionlivraisons:delete_livraison' l.id %}';"
+                    <button onclick="if(confirm('êtes-vous sûr de vouloir supprimer la livraison '+'{{l.id}} '+' ?')){location.href='{% url 'gestionlivraisons:delete_livraison' l.id %}'};"
                             class="btn btn-danger btn-xs">
                         <i class="fa fa-trash-o "></i>
+                    </button>
+                    <button onclick="location.href='{% url 'gestionlivraisons:generate_livraison' l.id %}';"
+                            class="btn btn-theme02 btn-xs"><i class="fa fa-save"></i>
                     </button>
 
                 </td>

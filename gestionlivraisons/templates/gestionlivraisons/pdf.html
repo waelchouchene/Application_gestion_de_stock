@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 5px;
+            background-color: #fff;
+            font-size: 13px;
+        }
+
+        .table th,
+        .table td {
+            padding: 5px;
+            vertical-align: top;
+            border-top: 1px solid #000;
+            border :1px solid #000;
+            text-align: center;
+            color:blue;
+        }
+
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #000;
+        }
+
+        .table tbody + tbody {
+            border-top: 2px solid #000;
+        }
+
+        .table .table {
+            background-color: #fff;
+        }
+
+        .card-header{
+            font-size: 2em;
+        }
+
+        span.list-group {
+            height: 20px;
+            line-height: 20px;
+            list-style: none;
+            font-size: 1.5em;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        a.logo {
+            font-size: 24px;
+            color: #c7c7c7;
+            float: left;
+            margin-top: 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        a.logo span {
+            color: #4ECDC4;
+        }
+        a.date {
+            font-size: 13px;
+            color: #c7c7c7;
+            float: right;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        table.header-table {
+            border: none;
+        }
+    .heading { color: #FF0000; }
+
+    </style>
+</head>
+<body>
+
+<table >
+<tr><td align="center">Youssef Bani</td><td><img src="{% static 'genericfolder/img/logobani.png' %}" width="50" height="50"></td><td>يوسف باني</td></tr>
+<tr><td align="center">
+    <pre>Vente Empballages
+    Et Articles en Plastiques
+    31, Rue ElJazira-TUNIS
+    GSM : 97.450.825-28.750.825</pre></td><td><img src="{% static 'genericfolder/img/logobani.png' %}" width="50" height="50"></td><td>يوسف باني</td></tr>
+
+</table>
+<br></br>
+<br></br>
+<br></br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="heading">Bon de livraison : {{ livraison.commande.id }}</h2>
+        </div>
+
+        <br><br>
+
+        <table class="header-table" cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr>
+                <td><span class="list-group"><span class="bold">Date commande:</span> </span></td>
+                <td><span class="list-group"><span class="bold">Personnel:</span> </span>
+                </td>
+                <td><span class="list-group"><span class="bold">Client:</span> </span></td>
+            </tr>
+            <tr>
+                <td><span class="list-group"><span class="bold"></span> {{ livraison.commande.date }}</span></td>
+                <td><span class="list-group"><span class="bold"></span> {% if livraison.commande.personnel %}{{livraison.commande.personnel}}{% else %}Superuser{% endif %}</span>
+                </td>
+                <td><span class="list-group"><span class="bold"></span> {{ commande.client }}</span></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td><span class="list-group"><span class="bold">Adresse:</span> </span>
+                </td>
+                <td><span class="list-group"><span class="bold">Téléphone:</span></span>
+                </td>
+                <td><span class="list-group"><span class="bold">Email:</span></span></td>
+            </tr>
+
+            <tr>
+                <td><span class="list-group"><span class="bold"></span> {{ livraison.commande.client.adresse }}</span>
+                </td>
+                <td><span class="list-group"><span class="bold"></span> {{ livraison.commande.client.telephone }}</span>
+                </td>
+                <td><span class="list-group"><span class="bold"></span> {{ livraison.commande.client.email }}</span></td>
+            </tr>
+            </tbody>
+        </table>
+        <br></br>
+
+        <table class="header-table" cellspacing="0" cellpadding="0">
+            <tbody>
+            <tr>
+                <td class="heading"><span class="list-group"><span class="bold">Prix HT:</span> {{ livraison.commande.total_prix_ht }}</span>
+                </td>
+                <td class="heading"><span class="list-group"><span class="bold">Prix TTC:</span> {{ livraison.commande.total_prix_ttc }}</span>
+                </td>
+                <td><span class="list-group"></span></td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <tr>
+                <td align="left" ><span class="bold">Livré à :</span>  {{ livraison.commande.client.prenom }} {{ livraison.commande.client.nom }} <br>
+                <span class="bold">Adresse :</span>  {{ livraison.commande.client.adresse }}
+                </td>
+            </tr>
+
+        </table>
+
+        <span class="list-group"><span class="bold">Détails de la commande</span></span>
+        <br><br>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Article</th>
+                <th>Quantité</th>
+                <th>Prix Unitaire</th>
+                <th>Prix HT</th>
+                <th>Prix TTC</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for dc in livraison.commande.detailscommande_set.all %}
+            <tr>
+                <td>{{forloop.counter}}</td>
+                <td>{{dc.article.designation}}</td>
+                <td>{{dc.qtecommande}}</td>
+                <td>{{dc.article.prix_unitaire}}</td>
+                <td>{{dc.prix_ht}}</td>
+                <td>{{dc.prix_ttc}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

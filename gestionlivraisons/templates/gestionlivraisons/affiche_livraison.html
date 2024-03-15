@@ -1,0 +1,126 @@
+{% extends 'genericfolder/base.html' %}
+{% load static %}
+
+{% block css %}
+    <style>
+        .bold{
+            font-weight:bold;
+            color: black;
+        }
+    </style>
+{% endblock %}
+{% block title %}
+<div class="btn-group pull-right">
+    <button type="button" class="btn btn-theme04 dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        Action <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="{% url 'gestionlivraisons:generate_livraison' livraison.id %}">Enregistrer le bon de livraison</a></li>
+
+        <li><a style="cursor: pointer;"
+               onclick="if(confirm('êtes-vous sûr de vouloir modifier la livraison '+'{{livraison.id}} '+' ?')){location.href='{% url 'gestionlivraisons:modifier_livraison' livraison.id %}'};">
+            Modifier Livraison</a></li>
+           <li><a style="cursor: pointer;"
+               onclick="if(confirm('êtes-vous sûr de vouloir modifier la livraison '+'{{livraison.id}} '+' ?')){location.href='{% url 'gestionlivraisons:delete_livraison' livraison.id %}'};">
+            Supprimer Livraison</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block contenu %}
+    <div class="col-lg-12">
+        <div class="form-panel">
+            <form class="mbr-form">
+                <div class="row row-sm-offset">
+                    <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold" for="phone-form1-2w">
+                                Date livraison
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12" for="phone-form1-2w">
+                                {{livraison.date}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Personnel
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {% if livraison.chauffeur %}{{livraison.chauffeur}}{% else %}Superuser{% endif %}
+                            </label>
+                        </div>
+                    </div>
+                   <div class="col-md-4 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold" for="phone-form1-2w">
+                                Véhicule
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12" for="phone-form1-2w">
+                                {{livraison.vehicule.matricule}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row row-sm-offset">
+
+                    <div class="col-md-8 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Commande
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{livraison.commande.libelle}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 multi-horizontal" data-for="prenom">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12 bold">
+                                Date de la commande
+                            </label>
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                {{livraison.commande.date}}
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row row-sm-offset">
+                    <div class="col-md-12 multi-horizontal" data-for="code_postale">
+                        <div class="form-group">
+                            <label class="form-control-label mbr-fonts-style display-7 col-md-12">
+                                <h3>Détails de la livraison</h3>
+                            </label>
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Article</th>
+                            <th>Quantité</th>
+                            <th>Prix HT</th>
+                            <th>Prix TTC</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {% for dc in livraison.commande.detailscommande_set.all %}
+                          <tr>
+                            <td>{{forloop.counter}}</td>
+                            <td>{{dc.article.designation}}</td>
+                            <td>{{dc.qtecommande}}</td>
+                            <td>{{dc.prix_ht}}</td>
+                            <td>{{dc.prix_ttc}}</td>
+                          </tr>
+                        {% endfor %}
+                        </tbody>
+                      </table>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
